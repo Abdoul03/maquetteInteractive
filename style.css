@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(51, 51, 51);
+}
+
+.slt {
+  color: rgb(245, 158, 11);
+  margin-left: 20px;
+}
+.acc p {
+  color: rgb(245, 158, 11);
+  font-size: 40px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img img {
+  width: 500px;
+}
+.areaLink {
+  width: 250px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: rgb(245, 158, 11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 670px;
+}
+/* .areaLink {
+  width: 83px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(245, 158, 11);
+} */
