@@ -187,6 +187,47 @@ body #cvhome {
   top: 265px;
 }
 
+.ligne-verticale .reg2 {
+  width: 20px;
+  background-color: #f2ab01;
+  height: 50px;
+  border-radius: 10px;
+  position: absolute;
+  top: 365px;
+}
+.ligne-verticale .cerc4 {
+  background-color: #f2ab01;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 460px;
+}
+.ligne-verticale .reg3 {
+  width: 20px;
+  background-color: #f2ab01;
+  height: 50px;
+  border-radius: 10px;
+  position: absolute;
+  top: 662px;
+}
+.ligne-verticale .cerc5 {
+  background-color: #f2ab01;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 755px;
+}
+.ligne-verticale .cerc6 {
+  background-color: #f2ab01;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 939px;
+}
+
 /*
 .reg {
   width: 5%;
