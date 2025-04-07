@@ -9,6 +9,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  padding-top: 40px;
+  flex-direction: column;
 }
 @font-face {
   font-family: Alfa;
@@ -119,6 +122,9 @@
   align-items: center;
   gap: 5%;
   margin-bottom: 10%;
+}
+.con h2 {
+  font-size: 1.5rem;
 }
 .persoInfo i {
   font-size: 200%;
@@ -496,22 +502,62 @@
 .load {
   width: 100%;
 }
+.container {
+  position: relative;
+  width: 794px;
+  height: 1123px;
+  overflow: hidden;
+}
 .triangle2 {
   position: absolute;
   transform: rotate(180deg);
-  top: 227%;
-  left: 73.5%;
+  bottom: 0;
+  right: 0;
+  /* left: 64%; */
   width: 0;
   height: 0;
   border-left: -5px solid transparent;
-  border-right: 341px solid transparent;
-  border-top: 374px solid #f2ab01;
+  border-right: 220px solid transparent;
+  border-top: 220px solid #f2ab01;
 }
 .util {
   display: flex;
-  flex-direction: column;
-  gap: 1%;
-  position: relative;
-  margin-top: 24%;
-  left: 1%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  left: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  /* height: auto; */
+  /* width: auto; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 20px; */
+  gap: 20px;
+}
+
+@media (max-width: 375px) {
+  .triangle {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 209px solid transparent;
+    border-top: 186px solid #f2ab01;
+  }
+  .tri {
+    position: absolute;
+    bottom: 52px;
+    left: 60px;
+    width: 98px;
+    height: 104px;
+    border: 6px solid white;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    overflow: hidden;
+  }
 }

@@ -11,19 +11,13 @@ const rightZone = document.querySelector(".right");
 
 couleurs.addEventListener("click", () => {
   let change1 = Math.floor(Math.random() * 0xffffff).toString(16);
-  let change2 = Math.floor(Math.random() * 0xffffff).toString(16);
+  //   let change2 = Math.floor(Math.random() * 0xffffff).toString(16);
   leftZone.style.backgroundColor = "#" + change1;
-  rightZone.style.backgroundColor = "#" + change2;
+  //   rightZone.style.backgroundColor = "#" + change2;
 });
 
 telechargement.addEventListener("click", () => {
-  const cv = document.querySelector(".contenerCV");
-  const opt = {
-    margin: 0,
-    filename: "cv.pdf",
-    image: { type: "jpeg", quality: 0.9 },
-    html2canvas: { scale: 2 },
-    jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
-  };
-  html2pdf().set(opt).from(cv).save();
+  const cv = document.querySelector(".container");
+
+  html2pdf().from(cv).save("cv.pdf");
 });
