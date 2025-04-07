@@ -9,7 +9,7 @@
   font-family: Alfa;
   src: url(./assets/AlfaSlabOne-Regular.ttf);
 }
-body #cvhome {
+#cvhome {
   background-color: rgb(51, 51, 51);
 }
 

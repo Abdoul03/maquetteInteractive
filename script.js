@@ -8,12 +8,13 @@ const triangle2 = document.querySelector('.triangle2')
 const leftZone = document.querySelector('.left')
 const rightZone = document.querySelector('.right')
 
-let change1 = Math.floor(Math.random() * 0xFFFFFF).toString(16)
-let change2 = Math.floor(Math.random() * 0xFFFFFF).toString(16)
+
 // console.log(change);
 
 
 couleurs.addEventListener('click', () => {
+    let change1 = Math.floor(Math.random() * 0xFFFFFF).toString(16)
+    let change2 = Math.floor(Math.random() * 0xFFFFFF).toString(16)
     leftZone.style.backgroundColor = '#' + change1
     rightZone.style.backgroundColor = '#' + change2
 })
