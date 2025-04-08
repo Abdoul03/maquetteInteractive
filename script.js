@@ -6,6 +6,8 @@ const triangle2 = document.querySelector(".triangle2");
 //la partie gauche et droite
 const leftZone = document.querySelector(".left");
 const rightZone = document.querySelector(".right");
+//
+const goBack = document.querySelector(".goBack");
 
 // console.log(change);
 
@@ -20,4 +22,8 @@ telechargement.addEventListener("click", () => {
   const cv = document.querySelector(".container");
 
   html2pdf().from(cv).save("cv.pdf");
+});
+
+goBack.addEventListener("click", () => {
+  window.location.href = "index.html";
 });
