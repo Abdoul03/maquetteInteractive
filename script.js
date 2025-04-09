@@ -6,10 +6,7 @@ const triangle2 = document.querySelector(".triangle2");
 //la partie gauche et droite
 const leftZone = document.querySelector(".left");
 const rightZone = document.querySelector(".right");
-//
 const goBack = document.querySelector(".goBack");
-
-// console.log(change);
 
 couleurs.addEventListener("click", () => {
   let change1 = Math.floor(Math.random() * 0xffffff).toString(16);
